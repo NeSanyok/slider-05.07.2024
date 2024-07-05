@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link href="https://fonts.cdnfonts.com/css/tt-hoves-pro-trial" rel="stylesheet">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="section-1">
+            <h2>Немного о нас</h2>
+            <div class="both">
+                <div class="left">
+                    <img src="./img/image 1342.png" alt="">
+                    <p>Резиденты IT-парка и одна из самых успешных DIGITAL-школ в Узбекистане</p>
+                </div>
+                <div class="right">
+                    <p class="number">> 2500</p>
+                    <p class="text">выпускников</p>
+                    <p class="number">10 направлений</p>
+                    <p class="text">обучения в сфере Digital</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <h1 id="carousel-heading">Все еще сомневаешься? </h1>
+            <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+            <section class="splide" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="./img/slider_image_01.png" alt=""></li>
+                          <li class="splide__slide"><img src="./img/JM_photo_101 1.png" alt=""></li>
+                          <li class="splide__slide"><img src="./img/photo2.png" alt=""></li>
+                          <li class="splide__slide"><img src="./img/JM_photo_153.png" alt=""></li>
+                      </ul>
+                </div>
+              </section>
+        </section>
+    </main>
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                perPage: 2,
+                gap: '26px',
+                arrows: false,
+                breakpoints: {
+                    375: {
+                        perPage: 1
+                    }
+                }
+            });
+            splide.mount();
+        });
+    </script>
+</body>
+</html>
